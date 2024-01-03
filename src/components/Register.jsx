@@ -44,7 +44,7 @@ const Register = () => {
                             placeholder="Password" /
                         >
                     </div>
-                    <button className="bg-[#ffd54f] ">Register</button>
+                    <button className="bg-[#ffd54f] p-3 text-[#212121] rounded-md outline-none cursor-pointer transition-all duration-300 hover:bg-[#ffc107]">Register</button>
                 </div>
             </div>
         </div>
