@@ -1,6 +1,14 @@
 import { FaLock } from "react-icons/fa";
+// import { firebase}  from "../firebase/firebase";
+import { useState } from "react";
 
 const Register = () => {
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [country, setCountry] = useState('');
+    const [Phone, setPhone] = useState('');
+    const [password, setPassword] = useState('');
+
     return (
         <div className="flex items-center justify-center min-h-full  h-screen">
             <div className="flex flex-col justify-center items-center bg-[#fff] p-8 w-96  rounded-lg  shadow-lg shadow-black">
@@ -14,35 +22,46 @@ const Register = () => {
                             className="w-full outline-none border border-[#bdbdbd] p-[12px]"
                             type="text"
                             placeholder="full Name"
+                            value={name}
+                            onChange={(e) => { setName(e.target.value) }}
                         />
                     </div>
                     <div className="mb-5">
                         <input
                             className="w-full outline-none border border-[#bdbdbd] p-[12px]"
                             type="email"
-                            placeholder="E-mail" />
+                            placeholder="E-mail"
+                            value={email}
+                            onChange={(e) => { setEmail(e.target.value) }}
+                        />
 
                     </div>
                     <div className="mb-5">
                         <input
                             className="w-full outline-none border border-[#bdbdbd] p-[12px]"
                             type="text"
-                            placeholder="Country Nam
-                         e" />
+                            placeholder="Country Name"
+                            value={country}
+                            onChange={(e)=>{setCountry(e.target.value)}}
+                        />
                     </div>
                     <div className="mb-5">
                         <input
                             className="w-full outline-none border border-[#bdbdbd] p-[12px]"
                             type="text"
-                            placeholder="Phone Numbe
-                         r" />
+                            placeholder="Phone Number"
+                            value={Phone}
+                            onChange={(e)=>{setPhone(e.target.value)}}
+                        />
                     </div>
                     <div className="mb-5">
                         <input
                             className="w-full outline-none border border-[#bdbdbd] p-[12px]"
                             type="text"
-                            placeholder="Password" /
-                        >
+                            placeholder="Password"
+                            value={password}
+                            onChange={(e)=>{setPassword(e.target.value)}}
+                        />
                     </div>
                     <button className="bg-[#ffd54f] p-3 text-[#212121] rounded-md outline-none cursor-pointer transition-all duration-300 hover:bg-[#ffc107]">Register</button>
                 </div>
