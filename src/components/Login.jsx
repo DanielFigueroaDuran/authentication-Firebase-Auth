@@ -19,12 +19,13 @@ const Login = () => {
                             />
                             <input
                                 className="bg-[#cccccc40  border border-[slategray] rounded-[30px] w-full p-4 mb-5
-                                 focus:border-[cornflowerblue]  shadow-[cornflowerblue]"
+                                 focus:border-[cornflowerblue] shadow-[cornflowerblue]"
                                 type="text"
                                 placeholder="Ingresar Contraseña"
                             />
-                            <button>Registrarse</button>
+                            <button className="bg-[#0D6EFD] text-white border border-[slategray] rounded-[30px] p-4 mb-5 w-full">Registrarse</button>
                         </form>
+                        <h4><button>iniciar sesion</button></h4>
                     </div>
                 </div>
             </div>
